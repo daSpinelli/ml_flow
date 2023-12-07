@@ -1,0 +1,25 @@
+columns_to_use : [
+  'target',
+  'TaxaDeUtilizacaoDeLinhasNaoGarantidas',
+  'Idade',
+  'NumeroDeVezes30-59DiasAtrasoNaoPior',
+  'TaxaDeEndividamento',
+  'RendaMensal',
+  'NumeroDeLinhasDeCreditoEEmprestimosAbertos',
+  'NumeroDeVezes90DiasAtraso',
+  'NumeroDeEmprestimosOuLinhasImobiliarias',
+  'NumeroDeVezes60-89DiasAtrasoNaoPior',
+  'NumeroDeDependentes'
+]
+
+target_column : 'target'
+
+test_size : 0.33
+
+random_state : 42
+
+imputer_variables: ['RendaMensal', 'NumeroDeDependentes']
+
+discretizer_variables: ['TaxaDeUtilizacaoDeLinhasNaoGarantidas', 'TaxaDeEndividamento', 'RendaMensal']
+
+model_name: 'model.joblib'
