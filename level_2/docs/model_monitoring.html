@@ -1,0 +1,3233 @@
+{
+  "id": "f7762432-a5a7-469d-accf-8ab550d86673",
+  "name": null,
+  "timestamp": "2023-12-14T11:43:04.693225",
+  "metadata": {
+    "metric_presets": [
+      "DataDriftPreset"
+    ]
+  },
+  "tags": [],
+  "suite": {
+    "metrics": [
+      {
+        "type": "evidently.metrics.data_integrity.dataset_summary_metric.DatasetSummaryMetric",
+        "options": {
+          "color": null,
+          "render": null,
+          "custom": {}
+        },
+        "almost_duplicated_threshold": 0.95,
+        "almost_constant_threshold": 0.95
+      },
+      {
+        "type": "evidently.metrics.data_drift.dataset_drift_metric.DatasetDriftMetric",
+        "options": {
+          "color": null,
+          "render": null,
+          "custom": {}
+        },
+        "stattest": null,
+        "cat_stattest": null,
+        "num_stattest": null,
+        "text_stattest": null,
+        "per_column_stattest": null,
+        "stattest_threshold": null,
+        "cat_stattest_threshold": null,
+        "num_stattest_threshold": null,
+        "text_stattest_threshold": null,
+        "per_column_stattest_threshold": null,
+        "columns": null,
+        "drift_share": 0.5
+      },
+      {
+        "type": "evidently.metrics.data_drift.data_drift_table.DataDriftTable",
+        "options": {
+          "color": null,
+          "render": null,
+          "custom": {}
+        },
+        "stattest": null,
+        "cat_stattest": null,
+        "num_stattest": null,
+        "text_stattest": null,
+        "per_column_stattest": null,
+        "stattest_threshold": null,
+        "cat_stattest_threshold": null,
+        "num_stattest_threshold": null,
+        "text_stattest_threshold": null,
+        "per_column_stattest_threshold": null,
+        "columns": null,
+        "feature_importance": false
+      },
+      {
+        "type": "evidently.metrics.data_integrity.dataset_missing_values_metric.DatasetMissingValuesMetric",
+        "options": {
+          "color": null,
+          "render": null,
+          "custom": {}
+        },
+        "missing_values": [
+          "",
+          -Infinity,
+          null,
+          Infinity
+        ]
+      }
+    ],
+    "metric_results": [
+      {
+        "type": "evidently.metrics.data_integrity.dataset_summary_metric.DatasetSummaryMetricResult",
+        "almost_duplicated_threshold": 0.95,
+        "current": {
+          "type": "evidently.metrics.data_integrity.dataset_summary_metric.DatasetSummary",
+          "target": null,
+          "prediction": null,
+          "date_column": null,
+          "id_column": null,
+          "number_of_columns": 12,
+          "number_of_rows": 5,
+          "number_of_missing_values": 0,
+          "number_of_categorical_columns": 0,
+          "number_of_numeric_columns": 12,
+          "number_of_text_columns": 0,
+          "number_of_datetime_columns": 0,
+          "number_of_constant_columns": 2,
+          "number_of_almost_constant_columns": 2,
+          "number_of_duplicated_columns": 1,
+          "number_of_almost_duplicated_columns": 1,
+          "number_of_empty_rows": 0,
+          "number_of_empty_columns": 0,
+          "number_of_duplicated_rows": 0,
+          "columns_type_data": {
+            "Unnamed: 0": {
+              "dtype": "float64"
+            },
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": {
+              "dtype": "float64"
+            },
+            "Idade": {
+              "dtype": "float64"
+            },
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": {
+              "dtype": "float64"
+            },
+            "TaxaDeEndividamento": {
+              "dtype": "float64"
+            },
+            "RendaMensal": {
+              "dtype": "float64"
+            },
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": {
+              "dtype": "float64"
+            },
+            "NumeroDeVezes90DiasAtraso": {
+              "dtype": "float64"
+            },
+            "NumeroDeEmprestimosOuLinhasImobiliarias": {
+              "dtype": "float64"
+            },
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": {
+              "dtype": "float64"
+            },
+            "NumeroDeDependentes": {
+              "dtype": "float64"
+            },
+            "Preds_Prob": {
+              "dtype": "float64"
+            }
+          },
+          "nans_by_columns": {
+            "Unnamed: 0": 0,
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0,
+            "Idade": 0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0,
+            "TaxaDeEndividamento": 0,
+            "RendaMensal": 0,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0,
+            "NumeroDeVezes90DiasAtraso": 0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0,
+            "NumeroDeDependentes": 0,
+            "Preds_Prob": 0
+          },
+          "number_uniques_by_columns": {
+            "Unnamed: 0": 5,
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 5,
+            "Idade": 5,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 2,
+            "TaxaDeEndividamento": 5,
+            "RendaMensal": 5,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 4,
+            "NumeroDeVezes90DiasAtraso": 1,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 4,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 1,
+            "NumeroDeDependentes": 3,
+            "Preds_Prob": 5
+          }
+        },
+        "reference": {
+          "type": "evidently.metrics.data_integrity.dataset_summary_metric.DatasetSummary",
+          "target": null,
+          "prediction": null,
+          "date_column": null,
+          "id_column": null,
+          "number_of_columns": 10,
+          "number_of_rows": 150000,
+          "number_of_missing_values": 33655,
+          "number_of_categorical_columns": 0,
+          "number_of_numeric_columns": 10,
+          "number_of_text_columns": 0,
+          "number_of_datetime_columns": 0,
+          "number_of_constant_columns": 0,
+          "number_of_almost_constant_columns": 0,
+          "number_of_duplicated_columns": 0,
+          "number_of_almost_duplicated_columns": 0,
+          "number_of_empty_rows": 0,
+          "number_of_empty_columns": 0,
+          "number_of_duplicated_rows": 646,
+          "columns_type_data": {
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": {
+              "dtype": "float64"
+            },
+            "Idade": {
+              "dtype": "int64"
+            },
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": {
+              "dtype": "int64"
+            },
+            "TaxaDeEndividamento": {
+              "dtype": "float64"
+            },
+            "RendaMensal": {
+              "dtype": "float64"
+            },
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": {
+              "dtype": "int64"
+            },
+            "NumeroDeVezes90DiasAtraso": {
+              "dtype": "int64"
+            },
+            "NumeroDeEmprestimosOuLinhasImobiliarias": {
+              "dtype": "int64"
+            },
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": {
+              "dtype": "int64"
+            },
+            "NumeroDeDependentes": {
+              "dtype": "float64"
+            }
+          },
+          "nans_by_columns": {
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0,
+            "Idade": 0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0,
+            "TaxaDeEndividamento": 0,
+            "RendaMensal": 29731,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0,
+            "NumeroDeVezes90DiasAtraso": 0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0,
+            "NumeroDeDependentes": 3924
+          },
+          "number_uniques_by_columns": {
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 125728,
+            "Idade": 86,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 16,
+            "TaxaDeEndividamento": 114194,
+            "RendaMensal": 13594,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 58,
+            "NumeroDeVezes90DiasAtraso": 19,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 28,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 13,
+            "NumeroDeDependentes": 13
+          }
+        }
+      },
+      {
+        "type": "evidently.metrics.data_drift.dataset_drift_metric.DatasetDriftMetricResults",
+        "drift_share": 0.5,
+        "number_of_columns": 10,
+        "number_of_drifted_columns": 6,
+        "share_of_drifted_columns": 0.6,
+        "dataset_drift": true
+      },
+      {
+        "type": "evidently.metrics.data_drift.data_drift_table.DataDriftTableResults",
+        "number_of_columns": 10,
+        "number_of_drifted_columns": 6,
+        "share_of_drifted_columns": 0.6,
+        "dataset_drift": true,
+        "drift_by_columns": {
+          "Idade": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "Idade",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.5191241444525657,
+            "drift_detected": true,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  4.541666666666667,
+                  9.083333333333334,
+                  13.625,
+                  18.166666666666668,
+                  22.708333333333336,
+                  27.25,
+                  31.791666666666668,
+                  36.333333333333336,
+                  40.875,
+                  45.41666666666667,
+                  49.958333333333336,
+                  54.5,
+                  59.04166666666667,
+                  63.583333333333336,
+                  68.125,
+                  72.66666666666667,
+                  77.20833333333334,
+                  81.75,
+                  86.29166666666667,
+                  90.83333333333334,
+                  95.375,
+                  99.91666666666667,
+                  104.45833333333334,
+                  109.0
+                ],
+                "y": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  27.0,
+                  30.2,
+                  33.4,
+                  36.6,
+                  39.8,
+                  43.0,
+                  46.2,
+                  49.400000000000006,
+                  52.6,
+                  55.8,
+                  59.0
+                ],
+                "y": [
+                  0.06250000000000001,
+                  0.0,
+                  0.0,
+                  0.06250000000000008,
+                  0.0,
+                  0.062499999999999944,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.12499999999999989
+                ]
+              },
+              "correlations": {
+                "Idade": 1.0,
+                "NumeroDeDependentes": 0.6536406457297466,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.5513392857142857,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.8615060458275116,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.28396506953195094,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": 0.6694811309600597,
+                "TaxaDeEndividamento": 0.4660978156294085,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.6959885529923803
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  4.541666666666667,
+                  9.083333333333334,
+                  13.625,
+                  18.166666666666668,
+                  22.708333333333336,
+                  27.25,
+                  31.791666666666668,
+                  36.333333333333336,
+                  40.875,
+                  45.41666666666667,
+                  49.958333333333336,
+                  54.5,
+                  59.04166666666667,
+                  63.583333333333336,
+                  68.125,
+                  72.66666666666667,
+                  77.20833333333334,
+                  81.75,
+                  86.29166666666667,
+                  90.83333333333334,
+                  95.375,
+                  99.91666666666667,
+                  104.45833333333334,
+                  109.0
+                ],
+                "y": [
+                  1,
+                  0,
+                  0,
+                  0,
+                  617,
+                  4941,
+                  7237,
+                  11069,
+                  11232,
+                  16208,
+                  15076,
+                  18198,
+                  17103,
+                  14067,
+                  12884,
+                  7026,
+                  6494,
+                  3685,
+                  2529,
+                  1144,
+                  426,
+                  50,
+                  9,
+                  4
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  10.9,
+                  21.8,
+                  32.7,
+                  43.6,
+                  54.5,
+                  65.4,
+                  76.3,
+                  87.2,
+                  98.10000000000001,
+                  109.0
+                ],
+                "y": [
+                  6.116207951070336e-07,
+                  0.00011192660550458717,
+                  0.008967584097859325,
+                  0.01814250764525994,
+                  0.024507645259938843,
+                  0.02252110091743118,
+                  0.012020183486238541,
+                  0.004691131498470945,
+                  0.0007669724770642198,
+                  1.3455657492354751e-05
+                ]
+              },
+              "correlations": {
+                "Idade": 1.0,
+                "NumeroDeDependentes": -0.21330257804499514,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.03315027294722399,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.14770531827119093,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.0629951578010858,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": -0.05715946429910922,
+                "NumeroDeVezes90DiasAtraso": -0.06100470827606269,
+                "RendaMensal": 0.03771738678953456,
+                "TaxaDeEndividamento": 0.024187804139156978,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.005898182986468397
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 43.0,
+                    "1": 57.0,
+                    "2": 59.0,
+                    "3": 38.0,
+                    "4": 27.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": 37.52334080356631,
+                "y1": 67.06707252976702
+              }
+            }
+          },
+          "NumeroDeDependentes": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "NumeroDeDependentes",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.4458557714299511,
+            "drift_detected": true,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  0.7407407407407407,
+                  1.4814814814814814,
+                  2.2222222222222223,
+                  2.962962962962963,
+                  3.7037037037037033,
+                  4.444444444444445,
+                  5.185185185185185,
+                  5.925925925925926,
+                  6.666666666666666,
+                  7.4074074074074066,
+                  8.148148148148147,
+                  8.88888888888889,
+                  9.62962962962963,
+                  10.37037037037037,
+                  11.11111111111111,
+                  11.851851851851851,
+                  12.592592592592592,
+                  13.333333333333332,
+                  14.074074074074073,
+                  14.814814814814813,
+                  15.555555555555555,
+                  16.296296296296294,
+                  17.037037037037035,
+                  17.77777777777778,
+                  18.51851851851852,
+                  19.25925925925926,
+                  20.0
+                ],
+                "y": [
+                  2,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  0.2,
+                  0.4,
+                  0.6000000000000001,
+                  0.8,
+                  1.0,
+                  1.2000000000000002,
+                  1.4000000000000001,
+                  1.6,
+                  1.8,
+                  2.0
+                ],
+                "y": [
+                  2.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.9999999999999991,
+                  0.0,
+                  0.0,
+                  0.0,
+                  2.0000000000000004
+                ]
+              },
+              "correlations": {
+                "Idade": 0.6536406457297466,
+                "NumeroDeDependentes": 1.0,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.44821072850039756,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.8114408259335794,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.5590169943749475,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": 0.5756867266150104,
+                "TaxaDeEndividamento": 0.07534367184698462,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.4085741904781538
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  0.7407407407407407,
+                  1.4814814814814814,
+                  2.2222222222222223,
+                  2.962962962962963,
+                  3.7037037037037033,
+                  4.444444444444445,
+                  5.185185185185185,
+                  5.925925925925926,
+                  6.666666666666666,
+                  7.4074074074074066,
+                  8.148148148148147,
+                  8.88888888888889,
+                  9.62962962962963,
+                  10.37037037037037,
+                  11.11111111111111,
+                  11.851851851851851,
+                  12.592592592592592,
+                  13.333333333333332,
+                  14.074074074074073,
+                  14.814814814814813,
+                  15.555555555555555,
+                  16.296296296296294,
+                  17.037037037037035,
+                  17.77777777777778,
+                  18.51851851851852,
+                  19.25925925925926,
+                  20.0
+                ],
+                "y": [
+                  86902,
+                  26316,
+                  19522,
+                  0,
+                  9483,
+                  2862,
+                  746,
+                  0,
+                  158,
+                  51,
+                  24,
+                  0,
+                  5,
+                  5,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  2.0,
+                  4.0,
+                  6.0,
+                  8.0,
+                  10.0,
+                  12.0,
+                  14.0,
+                  16.0,
+                  18.0,
+                  20.0
+                ],
+                "y": [
+                  0.38753114816944606,
+                  0.09928051151455407,
+                  0.012349735753991073,
+                  0.0007153810345299707,
+                  9.926339713573756e-05,
+                  1.7114378816506476e-05,
+                  3.4228757633012953e-06,
+                  0.0,
+                  0.0,
+                  3.4228757633012953e-06
+                ]
+              },
+              "correlations": {
+                "Idade": -0.21330257804499514,
+                "NumeroDeDependentes": 1.0,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.12468428521270526,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.06532207034550476,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.002680449393682015,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": -0.010921997669854593,
+                "NumeroDeVezes90DiasAtraso": -0.010175866940909386,
+                "RendaMensal": 0.0626472702222365,
+                "TaxaDeEndividamento": -0.04067269774184223,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0.0015573444607284543
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 0.0,
+                    "1": 2.0,
+                    "2": 2.0,
+                    "3": 0.0,
+                    "4": 1.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -0.357863803626575,
+                "y1": 1.8723083393477062
+              }
+            }
+          },
+          "NumeroDeEmprestimosOuLinhasImobiliarias": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "NumeroDeEmprestimosOuLinhasImobiliarias",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.4282888178561164,
+            "drift_detected": true,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  1.9285714285714286,
+                  3.857142857142857,
+                  5.785714285714286,
+                  7.714285714285714,
+                  9.642857142857142,
+                  11.571428571428571,
+                  13.5,
+                  15.428571428571429,
+                  17.357142857142858,
+                  19.285714285714285,
+                  21.214285714285715,
+                  23.142857142857142,
+                  25.071428571428573,
+                  27.0,
+                  28.92857142857143,
+                  30.857142857142858,
+                  32.785714285714285,
+                  34.714285714285715,
+                  36.642857142857146,
+                  38.57142857142857,
+                  40.5,
+                  42.42857142857143,
+                  44.35714285714286,
+                  46.285714285714285,
+                  48.214285714285715,
+                  50.142857142857146,
+                  52.07142857142857,
+                  54.0
+                ],
+                "y": [
+                  3,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  0.4,
+                  0.8,
+                  1.2000000000000002,
+                  1.6,
+                  2.0,
+                  2.4000000000000004,
+                  2.8000000000000003,
+                  3.2,
+                  3.6,
+                  4.0
+                ],
+                "y": [
+                  1.0,
+                  0.0,
+                  0.49999999999999983,
+                  0.0,
+                  0.0,
+                  0.49999999999999956,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.5000000000000001
+                ]
+              },
+              "correlations": {
+                "Idade": 0.5513392857142857,
+                "NumeroDeDependentes": 0.44821072850039756,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 1.0,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.8243786964470824,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": 0.2004459314343183,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": 0.6631596474366643,
+                "TaxaDeEndividamento": 0.555674375368754,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.475661735087836
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  1.9285714285714286,
+                  3.857142857142857,
+                  5.785714285714286,
+                  7.714285714285714,
+                  9.642857142857142,
+                  11.571428571428571,
+                  13.5,
+                  15.428571428571429,
+                  17.357142857142858,
+                  19.285714285714285,
+                  21.214285714285715,
+                  23.142857142857142,
+                  25.071428571428573,
+                  27.0,
+                  28.92857142857143,
+                  30.857142857142858,
+                  32.785714285714285,
+                  34.714285714285715,
+                  36.642857142857146,
+                  38.57142857142857,
+                  40.5,
+                  42.42857142857143,
+                  44.35714285714286,
+                  46.285714285714285,
+                  48.214285714285715,
+                  50.142857142857146,
+                  52.07142857142857,
+                  54.0
+                ],
+                "y": [
+                  108526,
+                  37822,
+                  2859,
+                  491,
+                  171,
+                  60,
+                  33,
+                  14,
+                  8,
+                  4,
+                  3,
+                  2,
+                  3,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  5.4,
+                  10.8,
+                  16.200000000000003,
+                  21.6,
+                  27.0,
+                  32.400000000000006,
+                  37.800000000000004,
+                  43.2,
+                  48.6,
+                  54.0
+                ],
+                "y": [
+                  0.18420617283950616,
+                  0.0008629629629629628,
+                  9.1358024691358e-05,
+                  1.3580246913580252e-05,
+                  7.407407407407409e-06,
+                  2.4691358024691333e-06,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.2345679012345681e-06
+                ]
+              },
+              "correlations": {
+                "Idade": 0.03315027294722399,
+                "NumeroDeDependentes": 0.12468428521270526,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 1.0,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.43395860305531947,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.030564534653275847,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": -0.03972233236685698,
+                "NumeroDeVezes90DiasAtraso": -0.045205216455485774,
+                "RendaMensal": 0.1249589610947757,
+                "TaxaDeEndividamento": 0.12004602812505025,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0.006234713423841766
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 0.0,
+                    "1": 4.0,
+                    "2": 1.0,
+                    "3": 2.0,
+                    "4": 0.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -0.1115309848828605,
+                "y1": 2.148010984882861
+              }
+            }
+          },
+          "NumeroDeLinhasDeCreditoEEmprestimosAbertos": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "NumeroDeLinhasDeCreditoEEmprestimosAbertos",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.31069708967950543,
+            "drift_detected": true,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  2.230769230769231,
+                  4.461538461538462,
+                  6.6923076923076925,
+                  8.923076923076923,
+                  11.153846153846153,
+                  13.384615384615385,
+                  15.615384615384617,
+                  17.846153846153847,
+                  20.076923076923077,
+                  22.307692307692307,
+                  24.53846153846154,
+                  26.76923076923077,
+                  29.0,
+                  31.230769230769234,
+                  33.46153846153846,
+                  35.69230769230769,
+                  37.92307692307693,
+                  40.15384615384615,
+                  42.38461538461539,
+                  44.61538461538461,
+                  46.84615384615385,
+                  49.07692307692308,
+                  51.30769230769231,
+                  53.53846153846154,
+                  55.769230769230774,
+                  58.0
+                ],
+                "y": [
+                  0,
+                  2,
+                  0,
+                  1,
+                  0,
+                  1,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  4.0,
+                  5.1,
+                  6.2,
+                  7.300000000000001,
+                  8.4,
+                  9.5,
+                  10.600000000000001,
+                  11.700000000000001,
+                  12.8,
+                  13.9,
+                  15.0
+                ],
+                "y": [
+                  0.36363636363636376,
+                  0.0,
+                  0.1818181818181817,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.18181818181818188,
+                  0.0,
+                  0.18181818181818188
+                ]
+              },
+              "correlations": {
+                "Idade": 0.8615060458275116,
+                "NumeroDeDependentes": 0.8114408259335794,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.8243786964470824,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 1.0,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.1587632240692801,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": 0.7033226529747746,
+                "TaxaDeEndividamento": 0.5199768268560474,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.6883528801903989
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  2.230769230769231,
+                  4.461538461538462,
+                  6.6923076923076925,
+                  8.923076923076923,
+                  11.153846153846153,
+                  13.384615384615385,
+                  15.615384615384617,
+                  17.846153846153847,
+                  20.076923076923077,
+                  22.307692307692307,
+                  24.53846153846154,
+                  26.76923076923077,
+                  29.0,
+                  31.230769230769234,
+                  33.46153846153846,
+                  35.69230769230769,
+                  37.92307692307693,
+                  40.15384615384615,
+                  42.38461538461539,
+                  44.61538461538461,
+                  46.84615384615385,
+                  49.07692307692308,
+                  51.30769230769231,
+                  53.53846153846154,
+                  55.769230769230774,
+                  58.0
+                ],
+                "y": [
+                  12992,
+                  20667,
+                  26545,
+                  25807,
+                  29300,
+                  12672,
+                  8191,
+                  5370,
+                  4476,
+                  1549,
+                  955,
+                  576,
+                  344,
+                  276,
+                  99,
+                  62,
+                  25,
+                  32,
+                  12,
+                  10,
+                  11,
+                  12,
+                  4,
+                  4,
+                  4,
+                  5
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  5.8,
+                  11.6,
+                  17.4,
+                  23.2,
+                  29.0,
+                  34.8,
+                  40.6,
+                  46.4,
+                  52.199999999999996,
+                  58.0
+                ],
+                "y": [
+                  0.05355172413793104,
+                  0.0789896551724138,
+                  0.030152873563218392,
+                  0.007537931034482758,
+                  0.0015425287356321837,
+                  0.00047126436781609214,
+                  9.655172413793097e-05,
+                  3.793103448275864e-05,
+                  2.1839080459770125e-05,
+                  1.149425287356321e-05
+                ]
+              },
+              "correlations": {
+                "Idade": 0.14770531827119093,
+                "NumeroDeDependentes": 0.06532207034550476,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.43395860305531947,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 1.0,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.05531223617424452,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": -0.07107673495851058,
+                "NumeroDeVezes90DiasAtraso": -0.07998434978061914,
+                "RendaMensal": 0.09145465769828165,
+                "TaxaDeEndividamento": 0.0495652863150717,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.011280732694152605
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 4.0,
+                    "1": 15.0,
+                    "2": 12.0,
+                    "3": 7.0,
+                    "4": 4.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": 3.3068090103567265,
+                "y1": 13.598710989643273
+              }
+            }
+          },
+          "NumeroDeVezes30-59DiasAtrasoNaoPior": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "NumeroDeVezes30-59DiasAtrasoNaoPior",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.07185548637927643,
+            "drift_detected": false,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  3.2666666666666666,
+                  6.533333333333333,
+                  9.8,
+                  13.066666666666666,
+                  16.333333333333332,
+                  19.6,
+                  22.866666666666667,
+                  26.133333333333333,
+                  29.4,
+                  32.666666666666664,
+                  35.93333333333333,
+                  39.2,
+                  42.46666666666667,
+                  45.733333333333334,
+                  49.0,
+                  52.266666666666666,
+                  55.53333333333333,
+                  58.8,
+                  62.06666666666666,
+                  65.33333333333333,
+                  68.6,
+                  71.86666666666666,
+                  75.13333333333333,
+                  78.4,
+                  81.66666666666667,
+                  84.93333333333334,
+                  88.2,
+                  91.46666666666667,
+                  94.73333333333333,
+                  98.0
+                ],
+                "y": [
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  0.1,
+                  0.2,
+                  0.30000000000000004,
+                  0.4,
+                  0.5,
+                  0.6000000000000001,
+                  0.7000000000000001,
+                  0.8,
+                  0.9,
+                  1.0
+                ],
+                "y": [
+                  8.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  2.0000000000000004
+                ]
+              },
+              "correlations": {
+                "Idade": -0.28396506953195094,
+                "NumeroDeDependentes": -0.5590169943749475,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.2004459314343183,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": -0.1587632240692801,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": 1.0,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": -0.5313997437194402,
+                "TaxaDeEndividamento": 0.6930403651526149,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.3522310553736799
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  3.2666666666666666,
+                  6.533333333333333,
+                  9.8,
+                  13.066666666666666,
+                  16.333333333333332,
+                  19.6,
+                  22.866666666666667,
+                  26.133333333333333,
+                  29.4,
+                  32.666666666666664,
+                  35.93333333333333,
+                  39.2,
+                  42.46666666666667,
+                  45.733333333333334,
+                  49.0,
+                  52.266666666666666,
+                  55.53333333333333,
+                  58.8,
+                  62.06666666666666,
+                  65.33333333333333,
+                  68.6,
+                  71.86666666666666,
+                  75.13333333333333,
+                  78.4,
+                  81.66666666666667,
+                  84.93333333333334,
+                  88.2,
+                  91.46666666666667,
+                  94.73333333333333,
+                  98.0
+                ],
+                "y": [
+                  148403,
+                  1229,
+                  91,
+                  8,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  269
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  9.8,
+                  19.6,
+                  29.400000000000002,
+                  39.2,
+                  49.0,
+                  58.800000000000004,
+                  68.60000000000001,
+                  78.4,
+                  88.2,
+                  98.0
+                ],
+                "y": [
+                  0.10185238095238094,
+                  5.442176870748299e-06,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001829931972789116
+                ]
+              },
+              "correlations": {
+                "Idade": -0.0629951578010858,
+                "NumeroDeDependentes": -0.002680449393682015,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": -0.030564534653275847,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": -0.05531223617424452,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": 1.0,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": 0.9870054474799472,
+                "NumeroDeVezes90DiasAtraso": 0.983602681282063,
+                "RendaMensal": -0.010217360630424766,
+                "TaxaDeEndividamento": -0.006541922790472925,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.0013135009632522098
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 0.0,
+                    "3": 1.0,
+                    "4": 0.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -3.7717479386849813,
+                "y1": 4.613814605351648
+              }
+            }
+          },
+          "NumeroDeVezes60-89DiasAtrasoNaoPior": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "NumeroDeVezes60-89DiasAtrasoNaoPior",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.05785248808881689,
+            "drift_detected": false,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  3.161290322580645,
+                  6.32258064516129,
+                  9.483870967741936,
+                  12.64516129032258,
+                  15.806451612903224,
+                  18.967741935483872,
+                  22.129032258064516,
+                  25.29032258064516,
+                  28.451612903225804,
+                  31.61290322580645,
+                  34.774193548387096,
+                  37.935483870967744,
+                  41.096774193548384,
+                  44.25806451612903,
+                  47.41935483870967,
+                  50.58064516129032,
+                  53.74193548387097,
+                  56.90322580645161,
+                  60.064516129032256,
+                  63.2258064516129,
+                  66.38709677419355,
+                  69.54838709677419,
+                  72.70967741935483,
+                  75.87096774193549,
+                  79.03225806451613,
+                  82.19354838709677,
+                  85.35483870967741,
+                  88.51612903225806,
+                  91.6774193548387,
+                  94.83870967741935,
+                  98.0
+                ],
+                "y": [
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  -0.5,
+                  -0.4,
+                  -0.3,
+                  -0.19999999999999996,
+                  -0.09999999999999998,
+                  0.0,
+                  0.10000000000000009,
+                  0.20000000000000007,
+                  0.30000000000000004,
+                  0.4,
+                  0.5
+                ],
+                "y": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  9.999999999999991,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "correlations": {
+                "Idade": NaN,
+                "NumeroDeDependentes": NaN,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": NaN,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": NaN,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": NaN,
+                "TaxaDeEndividamento": NaN,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": NaN
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  3.161290322580645,
+                  6.32258064516129,
+                  9.483870967741936,
+                  12.64516129032258,
+                  15.806451612903224,
+                  18.967741935483872,
+                  22.129032258064516,
+                  25.29032258064516,
+                  28.451612903225804,
+                  31.61290322580645,
+                  34.774193548387096,
+                  37.935483870967744,
+                  41.096774193548384,
+                  44.25806451612903,
+                  47.41935483870967,
+                  50.58064516129032,
+                  53.74193548387097,
+                  56.90322580645161,
+                  60.064516129032256,
+                  63.2258064516129,
+                  66.38709677419355,
+                  69.54838709677419,
+                  72.70967741935483,
+                  75.87096774193549,
+                  79.03225806451613,
+                  82.19354838709677,
+                  85.35483870967741,
+                  88.51612903225806,
+                  91.6774193548387,
+                  94.83870967741935,
+                  98.0
+                ],
+                "y": [
+                  149563,
+                  155,
+                  12,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  269
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  9.8,
+                  19.6,
+                  29.400000000000002,
+                  39.2,
+                  49.0,
+                  58.800000000000004,
+                  68.60000000000001,
+                  78.4,
+                  88.2,
+                  98.0
+                ],
+                "y": [
+                  0.10185714285714285,
+                  6.802721088435374e-07,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001829931972789116
+                ]
+              },
+              "correlations": {
+                "Idade": -0.05715946429910922,
+                "NumeroDeDependentes": -0.010921997669854593,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": -0.03972233236685698,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": -0.07107673495851058,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": 0.9870054474799472,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": 1.0,
+                "NumeroDeVezes90DiasAtraso": 0.9927961825916152,
+                "RendaMensal": -0.011115549123717388,
+                "TaxaDeEndividamento": -0.007533099309334755,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.0010478272157644843
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 0.0,
+                    "3": 0.0,
+                    "4": 0.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -3.9147927543205547,
+                "y1": 4.395566087653888
+              }
+            }
+          },
+          "NumeroDeVezes90DiasAtraso": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "NumeroDeVezes90DiasAtraso",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.06379343733765229,
+            "drift_detected": false,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  3.161290322580645,
+                  6.32258064516129,
+                  9.483870967741936,
+                  12.64516129032258,
+                  15.806451612903224,
+                  18.967741935483872,
+                  22.129032258064516,
+                  25.29032258064516,
+                  28.451612903225804,
+                  31.61290322580645,
+                  34.774193548387096,
+                  37.935483870967744,
+                  41.096774193548384,
+                  44.25806451612903,
+                  47.41935483870967,
+                  50.58064516129032,
+                  53.74193548387097,
+                  56.90322580645161,
+                  60.064516129032256,
+                  63.2258064516129,
+                  66.38709677419355,
+                  69.54838709677419,
+                  72.70967741935483,
+                  75.87096774193549,
+                  79.03225806451613,
+                  82.19354838709677,
+                  85.35483870967741,
+                  88.51612903225806,
+                  91.6774193548387,
+                  94.83870967741935,
+                  98.0
+                ],
+                "y": [
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  -0.5,
+                  -0.4,
+                  -0.3,
+                  -0.19999999999999996,
+                  -0.09999999999999998,
+                  0.0,
+                  0.10000000000000009,
+                  0.20000000000000007,
+                  0.30000000000000004,
+                  0.4,
+                  0.5
+                ],
+                "y": [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  9.999999999999991,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "correlations": {
+                "Idade": NaN,
+                "NumeroDeDependentes": NaN,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": NaN,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": NaN,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": NaN,
+                "TaxaDeEndividamento": NaN,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": NaN
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  3.161290322580645,
+                  6.32258064516129,
+                  9.483870967741936,
+                  12.64516129032258,
+                  15.806451612903224,
+                  18.967741935483872,
+                  22.129032258064516,
+                  25.29032258064516,
+                  28.451612903225804,
+                  31.61290322580645,
+                  34.774193548387096,
+                  37.935483870967744,
+                  41.096774193548384,
+                  44.25806451612903,
+                  47.41935483870967,
+                  50.58064516129032,
+                  53.74193548387097,
+                  56.90322580645161,
+                  60.064516129032256,
+                  63.2258064516129,
+                  66.38709677419355,
+                  69.54838709677419,
+                  72.70967741935483,
+                  75.87096774193549,
+                  79.03225806451613,
+                  82.19354838709677,
+                  85.35483870967741,
+                  88.51612903225806,
+                  91.6774193548387,
+                  94.83870967741935,
+                  98.0
+                ],
+                "y": [
+                  149127,
+                  502,
+                  78,
+                  15,
+                  8,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  269
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  9.8,
+                  19.6,
+                  29.400000000000002,
+                  39.2,
+                  49.0,
+                  58.800000000000004,
+                  68.60000000000001,
+                  78.4,
+                  88.2,
+                  98.0
+                ],
+                "y": [
+                  0.10184149659863945,
+                  1.6326530612244897e-05,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001829931972789116
+                ]
+              },
+              "correlations": {
+                "Idade": -0.06100470827606269,
+                "NumeroDeDependentes": -0.010175866940909386,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": -0.045205216455485774,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": -0.07998434978061914,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": 0.983602681282063,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": 0.9927961825916152,
+                "NumeroDeVezes90DiasAtraso": 1.0,
+                "RendaMensal": -0.012742849255039004,
+                "TaxaDeEndividamento": -0.00831964010681898,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.0010612463781356045
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 0.0,
+                    "1": 0.0,
+                    "2": 0.0,
+                    "3": 0.0,
+                    "4": 0.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -3.903330454261112,
+                "y1": 4.435277120927778
+              }
+            }
+          },
+          "RendaMensal": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "RendaMensal",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.13532162056483532,
+            "drift_detected": true,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  94023.4375,
+                  188046.875,
+                  282070.3125,
+                  376093.75,
+                  470117.1875,
+                  564140.625,
+                  658164.0625,
+                  752187.5,
+                  846210.9375,
+                  940234.375,
+                  1034257.8125,
+                  1128281.25,
+                  1222304.6875,
+                  1316328.125,
+                  1410351.5625,
+                  1504375.0,
+                  1598398.4375,
+                  1692421.875,
+                  1786445.3125,
+                  1880468.75,
+                  1974492.1875,
+                  2068515.625,
+                  2162539.0625,
+                  2256562.5,
+                  2350585.9375,
+                  2444609.375,
+                  2538632.8125,
+                  2632656.25,
+                  2726679.6875,
+                  2820703.125,
+                  2914726.5625,
+                  3008750.0
+                ],
+                "y": [
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  3200.0,
+                  3794.1,
+                  4388.2,
+                  4982.3,
+                  5576.4,
+                  6170.5,
+                  6764.6,
+                  7358.7,
+                  7952.8,
+                  8546.900000000001,
+                  9141.0
+                ],
+                "y": [
+                  0.00033664366268305,
+                  0.00033664366268305,
+                  0.0,
+                  0.0003366436626830503,
+                  0.0003366436626830498,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0003366436626830508
+                ]
+              },
+              "correlations": {
+                "Idade": 0.6694811309600597,
+                "NumeroDeDependentes": 0.5756867266150104,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.6631596474366643,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.7033226529747746,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.5313997437194402,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": 1.0,
+                "TaxaDeEndividamento": -0.07455228547887419,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.04306938703688712
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  94023.4375,
+                  188046.875,
+                  282070.3125,
+                  376093.75,
+                  470117.1875,
+                  564140.625,
+                  658164.0625,
+                  752187.5,
+                  846210.9375,
+                  940234.375,
+                  1034257.8125,
+                  1128281.25,
+                  1222304.6875,
+                  1316328.125,
+                  1410351.5625,
+                  1504375.0,
+                  1598398.4375,
+                  1692421.875,
+                  1786445.3125,
+                  1880468.75,
+                  1974492.1875,
+                  2068515.625,
+                  2162539.0625,
+                  2256562.5,
+                  2350585.9375,
+                  2444609.375,
+                  2538632.8125,
+                  2632656.25,
+                  2726679.6875,
+                  2820703.125,
+                  2914726.5625,
+                  3008750.0
+                ],
+                "y": [
+                  120186,
+                  54,
+                  11,
+                  3,
+                  3,
+                  1,
+                  3,
+                  3,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  300875.0,
+                  601750.0,
+                  902625.0,
+                  1203500.0,
+                  1504375.0,
+                  1805250.0,
+                  2106125.0,
+                  2407000.0,
+                  2707875.0,
+                  3008750.0
+                ],
+                "y": [
+                  3.3231695893393772e-06,
+                  1.9344532419731598e-10,
+                  1.6581027788341371e-10,
+                  2.7635046313902283e-11,
+                  0.0,
+                  5.5270092627804567e-11,
+                  0.0,
+                  0.0,
+                  0.0,
+                  2.7635046313902283e-11
+                ]
+              },
+              "correlations": {
+                "Idade": 0.03771738678953456,
+                "NumeroDeDependentes": 0.0626472702222365,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.1249589610947757,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.09145465769828165,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.010217360630424766,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": -0.011115549123717388,
+                "NumeroDeVezes90DiasAtraso": -0.012742849255039004,
+                "RendaMensal": 1.0,
+                "TaxaDeEndividamento": -0.02871226752754589,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0.007123890646563912
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 5700.0,
+                    "1": 9141.0,
+                    "2": 5083.0,
+                    "3": 3200.0,
+                    "4": 3865.0
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -7714.452977889291,
+                "y1": 21054.89545267498
+              }
+            }
+          },
+          "TaxaDeEndividamento": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "TaxaDeEndividamento",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.17304552209271487,
+            "drift_detected": true,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  9989.818181818182,
+                  19979.636363636364,
+                  29969.454545454544,
+                  39959.27272727273,
+                  49949.09090909091,
+                  59938.90909090909,
+                  69928.72727272728,
+                  79918.54545454546,
+                  89908.36363636363,
+                  99898.18181818182,
+                  109888.0,
+                  119877.81818181818,
+                  129867.63636363637,
+                  139857.45454545456,
+                  149847.27272727274,
+                  159837.0909090909,
+                  169826.9090909091,
+                  179816.72727272726,
+                  189806.54545454547,
+                  199796.36363636365,
+                  209786.18181818182,
+                  219776.0,
+                  229765.81818181818,
+                  239755.63636363635,
+                  249745.45454545456,
+                  259735.27272727274,
+                  269725.09090909094,
+                  279714.9090909091,
+                  289704.7272727273,
+                  299694.54545454547,
+                  309684.36363636365,
+                  319674.1818181818,
+                  329664.0
+                ],
+                "y": [
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.019917227,
+                  0.110521568,
+                  0.20112590900000002,
+                  0.29173024999999997,
+                  0.382334591,
+                  0.47293893200000003,
+                  0.563543273,
+                  0.654147614,
+                  0.744751955,
+                  0.835356296,
+                  0.925960637
+                ],
+                "y": [
+                  2.2073997536166616,
+                  2.207399753616661,
+                  0.0,
+                  0.0,
+                  0.0,
+                  2.207399753616664,
+                  0.0,
+                  2.2073997536166607,
+                  0.0,
+                  2.207399753616664
+                ]
+              },
+              "correlations": {
+                "Idade": 0.4660978156294085,
+                "NumeroDeDependentes": 0.07534367184698462,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.555674375368754,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.5199768268560474,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": 0.6930403651526149,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": -0.07455228547887419,
+                "TaxaDeEndividamento": 1.0,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": -0.9037374122074919
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  9989.818181818182,
+                  19979.636363636364,
+                  29969.454545454544,
+                  39959.27272727273,
+                  49949.09090909091,
+                  59938.90909090909,
+                  69928.72727272728,
+                  79918.54545454546,
+                  89908.36363636363,
+                  99898.18181818182,
+                  109888.0,
+                  119877.81818181818,
+                  129867.63636363637,
+                  139857.45454545456,
+                  149847.27272727274,
+                  159837.0909090909,
+                  169826.9090909091,
+                  179816.72727272726,
+                  189806.54545454547,
+                  199796.36363636365,
+                  209786.18181818182,
+                  219776.0,
+                  229765.81818181818,
+                  239755.63636363635,
+                  249745.45454545456,
+                  259735.27272727274,
+                  269725.09090909094,
+                  279714.9090909091,
+                  289704.7272727273,
+                  299694.54545454547,
+                  309684.36363636365,
+                  319674.1818181818,
+                  329664.0
+                ],
+                "y": [
+                  149820,
+                  137,
+                  19,
+                  8,
+                  4,
+                  1,
+                  3,
+                  0,
+                  0,
+                  0,
+                  2,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  2
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  32966.4,
+                  65932.8,
+                  98899.20000000001,
+                  131865.6,
+                  164832.0,
+                  197798.40000000002,
+                  230764.80000000002,
+                  263731.2,
+                  296697.60000000003,
+                  329664.0
+                ],
+                "y": [
+                  3.032946677020643e-05,
+                  2.831165469488125e-09,
+                  0.0,
+                  6.066783148903126e-10,
+                  0.0,
+                  2.0222610496343738e-10,
+                  2.0222610496343756e-10,
+                  0.0,
+                  0.0,
+                  6.066783148903131e-10
+                ]
+              },
+              "correlations": {
+                "Idade": 0.024187804139156978,
+                "NumeroDeDependentes": -0.04067269774184223,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.12004602812505025,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.0495652863150717,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.006541922790472925,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": -0.007533099309334755,
+                "NumeroDeVezes90DiasAtraso": -0.00831964010681898,
+                "RendaMensal": -0.02871226752754589,
+                "TaxaDeEndividamento": 1.0,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0.003961204976163505
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 0.177512717,
+                    "1": 0.527236928,
+                    "2": 0.687647522,
+                    "3": 0.925960637,
+                    "4": 0.019917227
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -1684.8134473805,
+                "y1": 2390.8235989082395
+              }
+            }
+          },
+          "TaxaDeUtilizacaoDeLinhasNaoGarantidas": {
+            "type": "evidently.calculations.data_drift.ColumnDataDriftMetrics",
+            "column_name": "TaxaDeUtilizacaoDeLinhasNaoGarantidas",
+            "column_type": "num",
+            "stattest_name": "Wasserstein distance (normed)",
+            "stattest_threshold": 0.1,
+            "drift_score": 0.023801473046423764,
+            "drift_detected": false,
+            "current": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  1536.6060606060605,
+                  3073.212121212121,
+                  4609.818181818182,
+                  6146.424242424242,
+                  7683.030303030302,
+                  9219.636363636364,
+                  10756.242424242424,
+                  12292.848484848484,
+                  13829.454545454544,
+                  15366.060606060604,
+                  16902.666666666664,
+                  18439.272727272728,
+                  19975.878787878788,
+                  21512.484848484848,
+                  23049.090909090908,
+                  24585.696969696968,
+                  26122.30303030303,
+                  27658.90909090909,
+                  29195.51515151515,
+                  30732.12121212121,
+                  32268.727272727272,
+                  33805.33333333333,
+                  35341.93939393939,
+                  36878.545454545456,
+                  38415.15151515151,
+                  39951.757575757576,
+                  41488.36363636363,
+                  43024.969696969696,
+                  44561.57575757575,
+                  46098.181818181816,
+                  47634.78787878787,
+                  49171.393939393936,
+                  50708.0
+                ],
+                "y": [
+                  5,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.043275036,
+                  0.13894752240000002,
+                  0.2346200088,
+                  0.3302924952,
+                  0.4259649816,
+                  0.5216374680000001,
+                  0.6173099544,
+                  0.7129824408000001,
+                  0.8086549272000001,
+                  0.9043274136000001,
+                  0.9999999
+                ],
+                "y": [
+                  2.090465164287817,
+                  0.0,
+                  2.090465164287818,
+                  0.0,
+                  2.090465164287816,
+                  0.0,
+                  0.0,
+                  0.0,
+                  2.0904651642878167,
+                  2.0904651642878194
+                ]
+              },
+              "correlations": {
+                "Idade": -0.6959885529923803,
+                "NumeroDeDependentes": -0.4085741904781538,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": -0.475661735087836,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": -0.6883528801903989,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.3522310553736799,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": NaN,
+                "NumeroDeVezes90DiasAtraso": NaN,
+                "RendaMensal": -0.04306938703688712,
+                "TaxaDeEndividamento": -0.9037374122074919,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 1.0
+              }
+            },
+            "reference": {
+              "type": "evidently.calculations.data_drift.DriftStatsField",
+              "distribution": {
+                "type": "evidently.metric_results.Distribution",
+                "x": [
+                  0.0,
+                  1536.6060606060605,
+                  3073.212121212121,
+                  4609.818181818182,
+                  6146.424242424242,
+                  7683.030303030302,
+                  9219.636363636364,
+                  10756.242424242424,
+                  12292.848484848484,
+                  13829.454545454544,
+                  15366.060606060604,
+                  16902.666666666664,
+                  18439.272727272728,
+                  19975.878787878788,
+                  21512.484848484848,
+                  23049.090909090908,
+                  24585.696969696968,
+                  26122.30303030303,
+                  27658.90909090909,
+                  29195.51515151515,
+                  30732.12121212121,
+                  32268.727272727272,
+                  33805.33333333333,
+                  35341.93939393939,
+                  36878.545454545456,
+                  38415.15151515151,
+                  39951.757575757576,
+                  41488.36363636363,
+                  43024.969696969696,
+                  44561.57575757575,
+                  46098.181818181816,
+                  47634.78787878787,
+                  49171.393939393936,
+                  50708.0
+                ],
+                "y": [
+                  149844,
+                  69,
+                  35,
+                  15,
+                  9,
+                  10,
+                  4,
+                  3,
+                  3,
+                  1,
+                  0,
+                  2,
+                  0,
+                  1,
+                  2,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ]
+              },
+              "characteristic_examples": null,
+              "characteristic_words": null,
+              "small_distribution": {
+                "type": "evidently.metric_results.DistributionIncluded",
+                "x": [
+                  0.0,
+                  5070.8,
+                  10141.6,
+                  15212.400000000001,
+                  20283.2,
+                  25354.0,
+                  30424.800000000003,
+                  35495.6,
+                  40566.4,
+                  45637.200000000004,
+                  50708.0
+                ],
+                "y": [
+                  0.00019714574952012833,
+                  4.075622518471773e-08,
+                  1.1832452472982564e-08,
+                  2.629433882885015e-09,
+                  3.944150824327523e-09,
+                  1.3147169414425066e-09,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1.3147169414425087e-09
+                ]
+              },
+              "correlations": {
+                "Idade": -0.005898182986468397,
+                "NumeroDeDependentes": 0.0015573444607284543,
+                "NumeroDeEmprestimosOuLinhasImobiliarias": 0.006234713423841766,
+                "NumeroDeLinhasDeCreditoEEmprestimosAbertos": -0.011280732694152605,
+                "NumeroDeVezes30-59DiasAtrasoNaoPior": -0.0013135009632522098,
+                "NumeroDeVezes60-89DiasAtrasoNaoPior": -0.0010478272157644843,
+                "NumeroDeVezes90DiasAtraso": -0.0010612463781356045,
+                "RendaMensal": 0.007123890646563912,
+                "TaxaDeEndividamento": 0.003961204976163505,
+                "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 1.0
+              }
+            },
+            "scatter": {
+              "type": "evidently.metric_results.ScatterAggField",
+              "scatter": {
+                "current (mean)": {
+                  "per": {
+                    "0": 0,
+                    "1": 37,
+                    "2": 74,
+                    "3": 112,
+                    "4": 149
+                  },
+                  "mean": {
+                    "0": 0.88551908,
+                    "1": 0.463295269,
+                    "2": 0.043275036,
+                    "3": 0.280308229,
+                    "4": 0.9999999
+                  },
+                  "std": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN,
+                    "3": NaN,
+                    "4": NaN
+                  }
+                }
+              },
+              "x_name": "Index binned",
+              "plot_shape": {
+                "y0": -243.70693257077335,
+                "y1": 255.80380868010712
+              }
+            }
+          }
+        },
+        "dataset_columns": {
+          "type": "evidently.metric_results.DatasetColumns",
+          "utility_columns": {
+            "type": "evidently.metric_results.DatasetUtilityColumns",
+            "date": null,
+            "id": null,
+            "target": null,
+            "prediction": null
+          },
+          "target_type": null,
+          "num_feature_names": [
+            "Idade",
+            "NumeroDeDependentes",
+            "NumeroDeEmprestimosOuLinhasImobiliarias",
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos",
+            "NumeroDeVezes30-59DiasAtrasoNaoPior",
+            "NumeroDeVezes60-89DiasAtrasoNaoPior",
+            "NumeroDeVezes90DiasAtraso",
+            "RendaMensal",
+            "TaxaDeEndividamento",
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas"
+          ],
+          "cat_feature_names": [],
+          "text_feature_names": [],
+          "datetime_feature_names": [],
+          "target_names": null,
+          "task": null
+        },
+        "current_fi": null,
+        "reference_fi": null
+      },
+      {
+        "type": "evidently.metrics.data_integrity.dataset_missing_values_metric.DatasetMissingValuesMetricResult",
+        "current": {
+          "type": "evidently.metrics.data_integrity.dataset_missing_values_metric.DatasetMissingValues",
+          "different_missing_values": {
+            "": 0,
+            "-Infinity": 0,
+            "null": 0,
+            "Infinity": 0
+          },
+          "number_of_different_missing_values": 0,
+          "different_missing_values_by_column": {
+            "Unnamed: 0": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "Idade": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "TaxaDeEndividamento": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "RendaMensal": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeVezes90DiasAtraso": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeEmprestimosOuLinhasImobiliarias": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeDependentes": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "Preds_Prob": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            }
+          },
+          "number_of_different_missing_values_by_column": {
+            "Unnamed: 0": 0,
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0,
+            "Idade": 0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0,
+            "TaxaDeEndividamento": 0,
+            "RendaMensal": 0,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0,
+            "NumeroDeVezes90DiasAtraso": 0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0,
+            "NumeroDeDependentes": 0,
+            "Preds_Prob": 0
+          },
+          "number_of_missing_values": 0,
+          "share_of_missing_values": 0.0,
+          "number_of_missing_values_by_column": {
+            "Unnamed: 0": 0,
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0,
+            "Idade": 0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0,
+            "TaxaDeEndividamento": 0,
+            "RendaMensal": 0,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0,
+            "NumeroDeVezes90DiasAtraso": 0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0,
+            "NumeroDeDependentes": 0,
+            "Preds_Prob": 0
+          },
+          "share_of_missing_values_by_column": {
+            "Unnamed: 0": 0.0,
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0.0,
+            "Idade": 0.0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0.0,
+            "TaxaDeEndividamento": 0.0,
+            "RendaMensal": 0.0,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.0,
+            "NumeroDeVezes90DiasAtraso": 0.0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0.0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0.0,
+            "NumeroDeDependentes": 0.0,
+            "Preds_Prob": 0.0
+          },
+          "number_of_rows": 5,
+          "number_of_rows_with_missing_values": 0,
+          "share_of_rows_with_missing_values": 0.0,
+          "number_of_columns": 12,
+          "columns_with_missing_values": [],
+          "number_of_columns_with_missing_values": 0,
+          "share_of_columns_with_missing_values": 0.0
+        },
+        "reference": {
+          "type": "evidently.metrics.data_integrity.dataset_missing_values_metric.DatasetMissingValues",
+          "different_missing_values": {
+            "": 0,
+            "-Infinity": 0,
+            "null": 33655,
+            "Infinity": 0
+          },
+          "number_of_different_missing_values": 1,
+          "different_missing_values_by_column": {
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "Idade": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "TaxaDeEndividamento": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "RendaMensal": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 29731,
+              "Infinity": 0
+            },
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeVezes90DiasAtraso": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeEmprestimosOuLinhasImobiliarias": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 0,
+              "Infinity": 0
+            },
+            "NumeroDeDependentes": {
+              "": 0,
+              "-Infinity": 0,
+              "null": 3924,
+              "Infinity": 0
+            }
+          },
+          "number_of_different_missing_values_by_column": {
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0,
+            "Idade": 0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0,
+            "TaxaDeEndividamento": 0,
+            "RendaMensal": 1,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0,
+            "NumeroDeVezes90DiasAtraso": 0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0,
+            "NumeroDeDependentes": 1
+          },
+          "number_of_missing_values": 33655,
+          "share_of_missing_values": 0.022436666666666667,
+          "number_of_missing_values_by_column": {
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0,
+            "Idade": 0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0,
+            "TaxaDeEndividamento": 0,
+            "RendaMensal": 29731,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0,
+            "NumeroDeVezes90DiasAtraso": 0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0,
+            "NumeroDeDependentes": 3924
+          },
+          "share_of_missing_values_by_column": {
+            "TaxaDeUtilizacaoDeLinhasNaoGarantidas": 0.0,
+            "Idade": 0.0,
+            "NumeroDeVezes30-59DiasAtrasoNaoPior": 0.0,
+            "TaxaDeEndividamento": 0.0,
+            "RendaMensal": 0.19820666666666667,
+            "NumeroDeLinhasDeCreditoEEmprestimosAbertos": 0.0,
+            "NumeroDeVezes90DiasAtraso": 0.0,
+            "NumeroDeEmprestimosOuLinhasImobiliarias": 0.0,
+            "NumeroDeVezes60-89DiasAtrasoNaoPior": 0.0,
+            "NumeroDeDependentes": 0.02616
+          },
+          "number_of_rows": 150000,
+          "number_of_rows_with_missing_values": 29731,
+          "share_of_rows_with_missing_values": 0.19820666666666667,
+          "number_of_columns": 10,
+          "columns_with_missing_values": [
+            "NumeroDeDependentes",
+            "RendaMensal"
+          ],
+          "number_of_columns_with_missing_values": 2,
+          "share_of_columns_with_missing_values": 0.2
+        }
+      }
+    ],
+    "tests": [],
+    "test_results": [],
+    "options": {
+      "color": null,
+      "render": null,
+      "custom": {}
+    }
+  },
+  "metrics_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "test_ids": [],
+  "options": {
+    "color": null,
+    "render": null,
+    "custom": {}
+  }
+}

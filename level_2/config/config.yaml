@@ -12,6 +12,9 @@ columns_to_use : [
   'NumeroDeDependentes'
 ]
 
+mlflow_uri : 'http://localhost:5000'
+mlflow_experiment_name : 'prob_loan'
+
 target_column : 'target'
 
 test_size : 0.33
@@ -20,6 +23,6 @@ random_state : 42
 
 imputer_variables: ['RendaMensal', 'NumeroDeDependentes']
 
-discretizer_variables: ['TaxaDeUtilizacaoDeLinhasNaoGarantidas', 'TaxaDeEndividamento', 'RendaMensal']
+discretiser_variables: ['TaxaDeUtilizacaoDeLinhasNaoGarantidas', 'TaxaDeEndividamento', 'RendaMensal']
 
 model_name: 'model.joblib'
